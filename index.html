@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Барбершоп Бородинский</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav-item current-page">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#">Информация</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#">Прайс-лист</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#">Магазин</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <figure class="index-logo">
+      <img src="img/index-logo.png" width="371" height="155" alt="Барбершоп Бородинский">
+    </figure>
+    <div class="index-advantages">
+      <section class="index-advantages-block">
+        <h2 class="index-advantages-title">Быстро</h2>
+        <p>
+          МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО!
+          ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И
+          ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ
+          СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+        </p>
+      </section>
+      <section class="index-advantages-block">
+        <h2 class="index-advantages-title">Круто</h2>
+        <p>
+          ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+          МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+          ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+        </p>
+      </section>
+      <section class="index-advantages-block">
+        <h2 class="index-advantages-title">Дорого</h2>
+        <p>
+          НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО
+          ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО.
+          К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ
+          ОПРЕДЕЛЕНЫЙ СТАТУС?
+        </p>
+      </section>
+    </div>
+    <div class="index-content-block">
+      <section class="index-content-left index-content-news">
+        <h2 class="content-column-title"></h2>
+        <ul class="news-prew">
+          <li>
+            <p>
+              НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР!
+              ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ
+              СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+            </p>
+            <time datetime="2013-09-19">19 сентября</time>
+          </li>
+          <li>
+            <p>
+              В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС
+               «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ
+               МНОЖЕСТВА ТИТУЛОВ И НАГРАД
+               ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+            </p>
+            <time date-time="2013-06-18">18 июля</time>
+          </li>
+        </ul>
+        <a href="#">Все новости</a>
+      </section>
+      <section class="index-content-right index-content-gallery">
+        <h2 class="content-column-title">Фотогалерея</h2>
+        <div class="content-gallery-block">
+        <figure>
+          <img src="img/content-gallery-img.png" width="286" height="164" alt="Наш интерьер">
+        </figure>
+        <button class="btn content-gallery-prev" type="button" disabled>Назад</button>
+        <button class="btn content-gallery-next" type="button">Вперед</button>
+      </div>
+      </section>
+    </div>
+    <div class="index-content-block">
+      <section class="index-content-left index-content-contacts">
+        <h2 class="content-column-title">Контакты</h2>
+        <div class="content-contacts-block">
+          <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+          <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
+          <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+        </div>
+        <div class="content-contacts-block">
+          <p>ВРЕМЯ РАБОТЫ:</p>
+          <p>ПН—ПТ: С 10:00 ДО 22:00</p>
+          <p>СБ—ВС: С 10:00 ДО 19:00</p>
+        </div>
+        <a class="btn" href="#">Как проехать</a>
+        <a class="btn" href="#">Обратная связь</a>
+      </section>
+      <section class="index-content-right index-content-appointment">
+        <h2 class="content-column-title">Записаться</h2>
+        <p>
+          УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И
+          ВРЕМЯ И МЫ СВЯЖЕМСЯ С
+          ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+        </p>
+        <form action="/echo" method="post">
+          <input type="date" name="date" value="" required="required">
+          <input type="time" name="time" value="" required="required">
+          <input type="text" name="name" value="" placeholder="Ваше имя">
+          <input type="tel" name="phone" value="" placeholder="Ваш телефон" required="required">
+          <button type="submit" class="btn btn-submit">Записаться</button>
+        </form>
+      </section>
+    </div>
+
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer-left">
+      <p>
+
+        <a href="">
+
+        </a>
+      </p>
+    </div>
+    <div class="main-footer-center">
+      <p></p>
+      <a href="" class="btn footer-social-vk">VK</a>
+      <a href="" class="btn footer-social-fb">FB</a>
+      <a href="" class="btn footer-social-insta">INSTA</a>
+    </div>
+    <div class="main-footer-right">
+      <p></p>
+      <a href="" class="btn"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
